@@ -27,13 +27,13 @@ Chapter Two (*The Last Waltz*), ending at the second chime.
 ## Download
 
 Get the latest build from **[Releases](https://github.com/sadirhossain0/the-house-beyond-midnight/releases/latest)**.
-Each platform is a single file:
+Each platform is a single file (the Mac app comes zipped, because macOS apps are folders):
 
 | Platform | File | How to run |
 | --- | --- | --- |
-| Windows 10/11 | `HouseBeyondMidnight-…-Windows.zip` | Unzip, then double-click `HouseBeyondMidnight.exe`. Windows SmartScreen may warn because the game isn't code-signed yet: choose **More info → Run anyway**. |
+| Windows 10/11 | `HouseBeyondMidnight-…-Windows.exe` | Download and double-click. SmartScreen may warn because the game isn't code-signed yet: choose **More info → Run anyway**. |
 | macOS 11+ (Intel and Apple silicon) | `HouseBeyondMidnight-…-macOS.zip` | Unzip and move the app to Applications. The first time, right-click it and choose **Open** (it isn't notarised yet). |
-| Linux (x86_64) | `HouseBeyondMidnight-…-Linux.zip` | Unzip, run `chmod +x HouseBeyondMidnight.x86_64`, then start it. |
+| Linux (x86_64) | `HouseBeyondMidnight-…-Linux.x86_64` | Run `chmod +x` on the file, then start it. |
 | Android 8+ (64-bit) | `HouseBeyondMidnight-…-Android.apk` | Copy it to the phone and open it; allow installs from this source when asked. This is a test build. |
 
 You'll need a graphics card with Vulkan support (most from 2016 onward), 8 GB of RAM and about
