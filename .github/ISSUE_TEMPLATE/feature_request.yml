@@ -1,0 +1,14 @@
+name: Idea or suggestion
+description: Something you'd like to see in the house.
+labels: [idea]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What would it make better?

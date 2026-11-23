@@ -1,0 +1,37 @@
+name: Bug report
+description: Something in the game is broken or behaves strangely.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where in the game?
+      placeholder: "e.g. Chapter Two, ballroom, after pushing the folding screen"
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options: [Windows, macOS, Linux, Android]
+    validations:
+      required: true
+  - type: input
+    id: hardware
+    attributes:
+      label: Graphics card / phone model and graphics preset
+      placeholder: "e.g. GTX 1660, High preset"
+  - type: input
+    id: code
+    attributes:
+      label: Midnight Code (optional)
+      description: Pause → Save & Load → Codes. It lets us load your exact progress.
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or anything else
