@@ -101,11 +101,13 @@ var _locks := {}
 ## Freeze player control while a scene runs. Several systems may hold a lock at once; control
 ## returns only when every one of them has let go.
 func lock(key := "story") -> void:
-	_locks[key] = true
+	_locks[key] = int(_locks.get(key, 0)) + 1   # counted, so overlapping scenes can't release each other
 	if state == "free" or state == "dance": state = "locked"
 
 func unlock(key := "story") -> void:
-	_locks.erase(key)
+	var n := int(_locks.get(key, 0)) - 1
+	if n > 0: _locks[key] = n
+	else: _locks.erase(key)
 	if _locks.is_empty() and state == "locked": state = "free"
 
 func set_checkpoint(xf: Transform3D, room_id: String) -> void:

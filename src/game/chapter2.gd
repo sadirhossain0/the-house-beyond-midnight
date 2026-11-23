@@ -576,7 +576,7 @@ func _end_encounter() -> void:
 	encounter_active = false
 	player.flared.disconnect(_on_flare)
 	if _beat_ui: _beat_ui.queue_free(); _beat_ui = null
-	player.lock()
+	player.state = "locked"   # still holding the lock taken in _to_phase3; released at the end
 	player.avatar.clear_action()
 	host.clear_action()
 	for d in dancers: d.play("bow", 2.0)
