@@ -14,6 +14,7 @@ var clocks_seen := {}
 var pip_spot := 0
 var _porter_drift := 0.0
 var _porter_target := Vector3.ZERO
+var _jangle_t := 0.0
 
 const PIP_SPOTS := [Vector3(-33.2, 0.2, 4.4), Vector3(-25.8, 0.2, 3.0), Vector3(-15.4, 0.2, 5.0)]
 
@@ -485,6 +486,7 @@ func _pip_update(dt: float) -> void:
 	if player.raise > 0.5 and d < 7.0:
 		pip_spot = (pip_spot + 1) % PIP_SPOTS.size()
 		Audio.react("pip", "gasp")
+		Audio.sfx("buttons_rattle", pip.global_position, {"vol": -3.0})
 		var cand: OmniLight3D = world.refs.pip_candelabra
 		if cand: cand.light_energy = 0.0; get_tree().create_timer(6.0).timeout.connect(func(): cand.light_energy = 1.0)
 	var to := target - pip.global_position
@@ -545,6 +547,10 @@ func _porter_update(dt: float) -> void:
 	porter.moving = to.length() > 0.2
 	porter.speed = 0.5
 	if porter.moving:
+		_jangle_t -= dt
+		if _jangle_t <= 0.0:
+			_jangle_t = randf_range(1.2, 2.0)
+			Audio.sfx("keys_jangle", porter.global_position + Vector3(0, 0.6, 0), {"vol": -6.0})
 		porter.global_position += to.normalized() * minf(to.length(), dt * 1.1)
 		porter.rotation.y = lerp_angle(porter.rotation.y, atan2(to.x, to.z), dt * 3.0)
 		porter.expression = "sad"

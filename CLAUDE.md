@@ -1,7 +1,9 @@
 # The House Beyond Midnight: project memory
 
-Read this first in every session. Plans for the next updates are in `docs/ROADMAP.md` (updates 2–5,
-planned but **not started**: wait for the user to say which to begin).
+Read this first in every session. Plans for the next updates are in `docs/ROADMAP.md`.
+**Update 2 is in progress** (the user said to do everything we can). Done so far: lip sync from the
+voice synth's vowels, character foley, dust motes in the lantern beam. Next: 2.0 models and
+environments, then the rest of 2.1–2.3. Log progress in `CHANGELOG.md` under "Unreleased".
 
 ## What this is
 
@@ -76,11 +78,19 @@ tools/export_all.sh
   `v.co`, not `v.co - centre`.
 - Loops with rubato: loop length comes from the tempo map (`Song.seconds()`).
 
-## Git
+## Git and releases
 
 - Push to `main` of `sadirhossain0/the-house-beyond-midnight`. Binaries go through Git LFS
-  (`.gitattributes`); the environment allows `lfs.github.com`.
-- `build/` and `.godot/` are ignored. Builds are 1.5–2.2 GB per platform; the Windows/Linux `.pck`
-  is just over GitHub's 2 GB release-asset limit (zip/split, or use itch.io butler).
-- The repo has six web-deploy workflows added by mistake (Pages, Jekyll, Gatsby, Hugo, Nuxt,
-  Next.js); removing them is planned in Update 4.
+  (`.gitattributes`); the environment allows `lfs.github.com`. README images live in `docs/media/`
+  in plain git.
+- This cloud session **cannot** create GitHub releases or change repository settings (description,
+  topics, social preview): the GitHub proxy returns 403. Releases are made by the
+  **"Build and release"** workflow (`.github/workflows/release.yml`); start it with
+  `gh api -X POST repos/sadirhossain0/the-house-beyond-midnight/actions/workflows/release.yml/dispatches -f ref=main -f "inputs[version]=X.Y.Z"`
+  (the `gh workflow run` shortcut fails: GraphQL is blocked). Put release notes in
+  `docs/releases/X.Y.Z.md`.
+- Desktop builds embed the data pack (one file each) and ship only the 2K texture tier, to stay
+  under GitHub's 2 GB release-asset limit. The Claude app can't send files over 500 MB.
+- Deleting the user's GitHub workflow files is blocked by a safety check: leave the six Pages
+  workflows for the user to remove (or ask first).
+- `build/`, `dist/` and `.godot/` are ignored.

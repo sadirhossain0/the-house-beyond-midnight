@@ -99,7 +99,9 @@ func show_page(p: String) -> void:
 	var key := p.split("_")[0]
 	match key:
 		"resume": _page_home(v)
-		"journal": _page_journal(v, p.trim_prefix("journal").trim_prefix("_"))
+		"journal":
+			Audio.ui("page")
+			_page_journal(v, p.trim_prefix("journal").trim_prefix("_"))
 		"map": _page_map(v)
 		"wardrobe": _page_wardrobe(v)
 		"collection": _page_collection(v)

@@ -10,17 +10,6 @@
   <img alt="Godot 4.7" src="https://img.shields.io/badge/Godot-4.7-478cbf?logo=godotengine&logoColor=white">
   <img alt="Platforms" src="https://img.shields.io/badge/platforms-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Android-6b5aa8">
   <img alt="Status" src="https://img.shields.io/badge/status-vertical%20slice-d8b25a">
-  <img alt="Version" src="https://img.shields.io/badge/version-0.3.0-2f8f83">
-</p>
-
-<p align="center">
-  <a href="#download">Download</a> ·
-  <a href="#screenshots">Screenshots</a> ·
-  <a href="#the-cast">The cast</a> ·
-  <a href="#whats-in-the-slice">Features</a> ·
-  <a href="#building">Building</a> ·
-  <a href="docs/ROADMAP.md">Roadmap</a> ·
-  <a href="CHANGELOG.md">Changelog</a>
 </p>
 
 It's New Year's Eve, one minute to midnight. Building surveyor **Avery Wren** has been sent to value

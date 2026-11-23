@@ -489,10 +489,45 @@ def ambience():
     save_amb('night_garden', ng, L)
 
 
+# ======================================================================== character foley (Update 2)
+def foley():
+    for i in range(1, 5):   # Avery's heavy wool coat: a short, low rustle on alternate steps
+        save(f'cloth_coat_{i}', lowpass(cloth(0.28, 3), 2200) * 0.9, room=(0.08, 0.6), peak_db=-14)
+    for i in range(1, 5):   # Mara's gown: a longer, silkier swish
+        sw = bandpass(noise(0.45), 1800, 9000) * np.sin(np.pi * t(0.45) / 0.45) ** 1.6
+        save(f'cloth_gown_{i}', sw * (0.5 + R.random() * 0.3), room=(0.1, 0.8), peak_db=-15)
+    for i in range(1, 4):   # the Porter's ring of brass tags
+        out = np.zeros(int(0.6 * SR), np.float32)
+        for k in range(9):
+            f0 = 2600 + R.random() * 2800
+            place(out, modes(0.35, [f0, f0 * 2.4, f0 * 3.9], [0.09, 0.05, 0.03], [0.4, 0.2, 0.1]), R.random() ** 1.3 * 0.35)
+        save(f'keys_jangle_{i}', out, room=(0.15, 1.0), peak_db=-10)
+    for i in range(1, 4):   # Pip's jacket of lost buttons clacking together
+        out = np.zeros(int(0.45 * SR), np.float32)
+        for k in range(14):
+            place(out, modes(0.05, [1800 + R.random() * 3000], [0.008 + R.random() * 0.01], [0.5]), R.random() * 0.35)
+        save(f'buttons_rattle_{i}', out, room=(0.12, 0.8), peak_db=-11)
+    for i in range(1, 3):   # the Host's cane on parquet: wood thud and a brass ferrule
+        out = np.zeros(int(0.5 * SR), np.float32)
+        place(out, modes(0.25, [210, 520, 3100, 5400], [0.05, 0.03, 0.06, 0.04], [1.0, 0.5, 0.3, 0.2]), 0.0)
+        save(f'cane_tap_{i}', out, room=(0.3, 1.8), peak_db=-6)
+    for i in range(1, 4):   # the lantern's handle creaking as it swings
+        c = friction(0.35, 140 + R.random() * 80, 0.5, 26, (900, 2100, 3800), 1.2) * np.sin(np.pi * t(0.35) / 0.35) ** 0.8
+        save(f'lantern_creak_{i}', c, room=(0.1, 0.8), peak_db=-14)
+    for i in range(1, 3):   # a single quiet tick of the Midnight Watch
+        save(f'watch_tick_soft_{i}', modes(0.08, [3600 + i * 150, 6200], [0.006, 0.003], [0.6, 0.3]), room=(0.05, 0.5), peak_db=-20)
+    pg = np.zeros(int(0.55 * SR), np.float32)  # turning a page of the Field Journal
+    for k in range(26):
+        d = 0.006 + R.random() * 0.02
+        place(pg, highpass(noise(d), 1200) * env_exp(d, d / 3) * R.random() ** 0.6, 0.05 + R.random() ** 1.4 * 0.4)
+    place(pg, lowpass(noise(0.12), 900) * np.sin(np.pi * t(0.12) / 0.12) * 0.4, 0.3)
+    save('ui_page', pg, room=(0.1, 0.8), peak_db=-10)
+
+
 if __name__ == '__main__':
     sys.path.insert(0, os.path.dirname(__file__))
     jobs = sys.argv[1:] or ['footsteps', 'door_creak', 'door_slam', 'knock', 'hidden_door', 'chains_break', 'furniture_slide', 'coat_hang', 'tea_pour', 'eat',
-                            'paper', 'quill', 'candle_out', 'lantern_light', 'magic', 'watch', 'clock_chime', 'thunder', 'instruments', 'ui', 'host_hum', 'ambience']
+                            'paper', 'quill', 'candle_out', 'lantern_light', 'magic', 'watch', 'clock_chime', 'thunder', 'instruments', 'ui', 'host_hum', 'ambience', 'foley']
     for j in jobs:
         globals()[j]()
         print('done', j)

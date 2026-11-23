@@ -589,7 +589,14 @@ func _face(dt: float, _time: float) -> void:
 	T.lidL = Vector3(close, 0, 0); T.lidR = Vector3(close, 0, 0)
 	T.browL = Vector3(0, 0, -_e.tilt); T.browR = Vector3(0, 0, _e.tilt)
 	var shape: String = target.mouth
-	if talk:
+	if talk and Audio.talking:
+		# lip sync: the mouth takes the shape of the vowel the voice is speaking right now
+		match Audio.current_viseme:
+			"a", "ae", "ai", "@": shape = "grin" if shape in ["smile", "grin"] else "open"
+			"o", "ou", "u": shape = "o"
+			"e", "i", "ei": shape = "grin"
+			_: shape = target.mouth
+	elif talk:
 		_mouth_t -= dt
 		if _mouth_t <= 0.0:
 			_mouth_open = not _mouth_open

@@ -196,6 +196,7 @@ func _meet_host() -> void:
 	host.set_presence(0.0)
 	var tw := create_tween(); tw.tween_method(host.set_presence, 0.0, 1.0, 1.2)
 	Audio.sfx("ghost_appear", host.global_position)
+	for k in 2: get_tree().create_timer(0.6 + k * 0.35).timeout.connect(func(): Audio.sfx("cane_tap", host.global_position))
 	await say([["host", "Ahem. AHEM. A guest! At last, a guest who isn't stuck on the second beat.", {"expr": "delighted", "anim": "bow", "frame": true}],
 		["host", "Welcome, welcome to the Ashcombe masquerade. I am your host. I have been your host for a remarkably long time.", {"expr": "proud", "anim": "gesture"}],
 		["avery", "You're waiting for the waltz to end.", {"expr": "curious"}],

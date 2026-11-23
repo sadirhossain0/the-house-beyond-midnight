@@ -38,6 +38,8 @@ var _step_ray := PhysicsRayQueryParameters3D.new()
 var _toggle_raise := false
 var _last_pos := Vector3.ZERO
 var _hurt_flash := 0.0
+var _cloth_step := false
+var _tick_t := 0.0
 
 func _ready() -> void:
 	collision_layer = 4
@@ -186,6 +188,11 @@ func _process(dt: float) -> void:
 	_interaction(free)
 	_observe(dt, free)
 	_hurt_flash = maxf(0.0, _hurt_flash - dt * 1.5)
+	if tool == "watch" and free:   # the Midnight Watch ticks quietly while it's in hand
+		_tick_t -= dt
+		if _tick_t <= 0.0:
+			_tick_t = 1.0
+			Audio.sfx("watch_tick_soft", null, {"vol": -6.0})
 
 # --------------------------------------------------------------------------------------- tools
 func _tools(dt: float, free: bool) -> void:
@@ -422,3 +429,10 @@ func _on_step(_foot: String) -> void:
 	if surface == "" and world.rooms.has(world.current): surface = world.rooms[world.current].surface
 	if Settings.data.cheats.squeaky_steps: surface = "squeak"
 	Audio.step(surface, global_position)
+	# clothing moves with every other step: a wool coat rustles, a gown swishes
+	_cloth_step = not _cloth_step
+	if _cloth_step:
+		var who: String = Save.profile.get("character", "avery")
+		var outfit: String = Save.profile.costumes.get(who, "")
+		var cloth := "cloth_gown" if outfit == "gown" else ("" if outfit in ["shirtsleeves", "nightcap", "performer", "masquerade"] else "cloth_coat")
+		if cloth != "": Audio.sfx(cloth, global_position, {"vol": -4.0, "range": 3.0})

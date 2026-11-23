@@ -1,5 +1,19 @@
 # Changelog
 
+## Unreleased (Update 2, in progress)
+
+- **Lip sync.** Mouths now take the shape of the vowel being spoken (open for "ah", round for "oo",
+  wide for "ee", closed between words), driven by the voice synthesiser's own syllable data.
+- **Foley.**
+  - Avery's coat rustles and Mara's gown swishes as they walk.
+  - The lantern creaks when it swings, and the Midnight Watch ticks quietly while it's in hand.
+  - The Porter's key ring jangles as he drifts, and Pip's button-covered jacket rattles when he
+    flees.
+  - The Host's cane taps when he appears, and the Field Journal turns a page when opened.
+- **Dust motes** drift and glint in the raised lantern beam.
+- **Downloads.** Windows and Linux ship as single executables, and releases are built by a
+  one-click GitHub Actions workflow.
+
 ## 0.3.0: the vertical slice
 
 The first playable release: the Prologue, Chapter One (*The Stopped Clocks*) and Chapter Two (*The Last Waltz*), ending at the Grand Clock's second chime.

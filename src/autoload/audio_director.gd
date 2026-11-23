@@ -45,6 +45,8 @@ var _voice_timer := 0.0
 var _voice_flip := false
 var _voice_char := ""
 var talking := false
+var current_viseme := ""      # vowel of the syllable being spoken right now ("" between words)
+var _syl_info := {}           # char_id -> [{c, v}] read from voice/<char>/syllables.json
 var world_root: Node3D
 var _rng := RandomNumberGenerator.new()
 
@@ -231,6 +233,10 @@ func _bank(char_id: String) -> Array:
 		if s == null: break
 		list.append(s)
 	_voice_banks[char_id] = list
+	var jp := VOICE_DIR + "%s/syllables.json" % char_id
+	if FileAccess.file_exists(jp):
+		var d: Variant = JSON.parse_string(FileAccess.get_file_as_string(jp))
+		if d is Array: _syl_info[char_id] = d
 	return list
 
 ## A short non-verbal reaction (hm, oh!, gasp, laugh, sigh...).
@@ -287,18 +293,24 @@ func speak(char_id: String, text: String, line_id := "") -> float:
 	return total
 
 func stop_voice() -> void:
-	_voice_queue.clear(); _voice_a.stop(); _voice_b.stop(); talking = false
+	_voice_queue.clear(); _voice_a.stop(); _voice_b.stop(); talking = false; current_viseme = ""
 
 func _update_voice(dt: float) -> void:
 	if not talking: return
 	_voice_timer -= dt
 	if _voice_timer > 0.0: return
 	if _voice_queue.is_empty():
-		if not _voice_a.playing and not _voice_b.playing: talking = false
+		if not _voice_a.playing and not _voice_b.playing:
+			talking = false
+			current_viseme = ""
 		return
 	var item: Dictionary = _voice_queue.pop_front()
 	_voice_timer = item.gap
-	if item.idx < 0: return
+	if item.idx < 0:
+		current_viseme = ""
+		return
+	var info: Array = _syl_info.get(_voice_char, [])
+	current_viseme = String(info[item.idx].v) if item.idx < info.size() else "a"
 	var bank := _bank(_voice_char)
 	if bank.is_empty(): return
 	var p := _voice_a if _voice_flip else _voice_b

@@ -136,6 +136,7 @@ class Voice:
         r = np.random.default_rng(self.p['seed'] + 1000)
         vowels = ['a', 'e', 'i', 'o', 'u', '@', 'ae', 'ai', 'ou', 'ei']
         out = []
+        self.bank_vowels = []
         for i in range(n):
             c = CONS[r.integers(0, len(CONS))] if r.random() > 0.12 else ''
             v = vowels[r.integers(0, len(vowels))]
@@ -143,6 +144,7 @@ class Voice:
             f0 = self.p['f0'] * (0.94 + r.random() * 0.14)
             s = self.syllable(c, v, dur, f0, fall=0.03 + r.random() * 0.06)
             out.append(self.finish(s))
+            self.bank_vowels.append({'c': c, 'v': v})
         return out
 
     def finish(self, s, room=0.06):
@@ -200,6 +202,9 @@ def build(name):
     os.makedirs(d, exist_ok=True)
     for i, s in enumerate(v.bank(32)):
         write_wav(os.path.join(d, 'syl_%02d.wav' % i), s.astype(np.float32), mono=True)
+    # the vowel and consonant of each syllable, so the game can shape mouths to match (lip sync)
+    import json
+    with open(os.path.join(d, 'syllables.json'), 'w') as f: json.dump(v.bank_vowels, f)
     for k, s in v.reactions().items():
         write_wav(os.path.join(d, 'react_%s.wav' % k), s.astype(np.float32), mono=True)
     print('voice', name)
