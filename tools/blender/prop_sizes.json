@@ -1,0 +1,1046 @@
+{
+ "ArmChair_01": {
+  "size_xyz_godot": [
+   0.848,
+   1.065,
+   0.766
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   0.0,
+   -0.034
+  ]
+ },
+ "Chandelier_01": {
+  "size_xyz_godot": [
+   0.746,
+   0.798,
+   0.816
+  ],
+  "min_y_godot": -0.798,
+  "center_xz": [
+   0.0,
+   0.006
+  ]
+ },
+ "Chandelier_02": {
+  "size_xyz_godot": [
+   0.679,
+   0.848,
+   0.619
+  ],
+  "min_y_godot": 0.06,
+  "center_xz": [
+   -0.001,
+   0.004
+  ]
+ },
+ "Chandelier_03": {
+  "size_xyz_godot": [
+   0.78,
+   1.041,
+   0.785
+  ],
+  "min_y_godot": -1.041,
+  "center_xz": [
+   0.001,
+   0.004
+  ]
+ },
+ "ClassicConsole_01": {
+  "size_xyz_godot": [
+   1.543,
+   0.949,
+   0.589
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   0.001,
+   -0.044
+  ]
+ },
+ "ClassicNightstand_01": {
+  "size_xyz_godot": [
+   0.568,
+   0.7,
+   0.424
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   -0.0,
+   -0.0
+  ]
+ },
+ "CoffeeTable_01": {
+  "size_xyz_godot": [
+   1.54,
+   0.523,
+   0.973
+  ],
+  "min_y_godot": 0.002,
+  "center_xz": [
+   0.0,
+   -0.0
+  ]
+ },
+ "GothicBed_01": {
+  "size_xyz_godot": [
+   1.494,
+   1.534,
+   2.04
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   0.036,
+   -0.033
+  ]
+ },
+ "GothicCabinet_01": {
+  "size_xyz_godot": [
+   1.719,
+   2.361,
+   1.129
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   0.0,
+   0.107
+  ]
+ },
+ "GothicCommode_01": {
+  "size_xyz_godot": [
+   1.201,
+   1.212,
+   0.581
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   -0.001,
+   0.001
+  ]
+ },
+ "GreenChair_01": {
+  "size_xyz_godot": [
+   0.673,
+   1.059,
+   0.664
+  ],
+  "min_y_godot": -0.001,
+  "center_xz": [
+   -0.001,
+   -0.046
+  ]
+ },
+ "Lantern_01": {
+  "size_xyz_godot": [
+   0.122,
+   0.294,
+   0.097
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   0.0,
+   -0.0
+  ]
+ },
+ "Ottoman_01": {
+  "size_xyz_godot": [
+   0.885,
+   0.624,
+   0.621
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   0.002,
+   0.001
+  ]
+ },
+ "Rockingchair_01": {
+  "size_xyz_godot": [
+   0.708,
+   0.995,
+   0.833
+  ],
+  "min_y_godot": 0.102,
+  "center_xz": [
+   0.0,
+   0.062
+  ]
+ },
+ "Sofa_01": {
+  "size_xyz_godot": [
+   1.571,
+   0.797,
+   0.658
+  ],
+  "min_y_godot": -0.001,
+  "center_xz": [
+   0.008,
+   -0.032
+  ]
+ },
+ "alarm_clock_01": {
+  "size_xyz_godot": [
+   0.132,
+   0.174,
+   0.067
+  ],
+  "min_y_godot": -0.001,
+  "center_xz": [
+   0.0,
+   0.009
+  ]
+ },
+ "antique_ceramic_vase_01": {
+  "size_xyz_godot": [
+   0.255,
+   0.44,
+   0.255
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   -0.0,
+   -0.0
+  ]
+ },
+ "book_encyclopedia_set_01": {
+  "size_xyz_godot": [
+   0.551,
+   0.237,
+   0.163
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   0.256,
+   0.019
+  ]
+ },
+ "brass_candleholders": {
+  "size_xyz_godot": [
+   1.053,
+   0.835,
+   0.365
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   0.078,
+   0.0
+  ]
+ },
+ "brass_diya_lantern": {
+  "size_xyz_godot": [
+   0.123,
+   0.381,
+   0.123
+  ],
+  "min_y_godot": 0.0,
+  "center_xz": [
+   0.005,
+   -0.006
+  ]
+ },
+ "brass_goblets": {
+  "size_xyz_godot": [
+   0.453,
+   0.273,
+   0.298
+  ],
+  "min_y_godot": 0.005,
+  "center_xz": [
+   0.007,
+   0.046
+  ]
+ },
+ "brass_vase_01": {
+  "size_xyz_godot": [
+   0.227,
+   0.692,
+   0.227
+  ],
+  "min_y_godot": 0.001,
+  "center_xz": [
+   -0.0,
+   -0.0
+  ]
+ },
+ "brass_vase_03": {
+  "size_xyz_godot": [
+   0.083,
+   0.2,
+   0.083
+  ],
+  "min_y_godot": 0.001,
+  "center_xz": [
+   -0.0,
+   -0.0
+  ]
+ },
+ "carrot_cake": {
+  "size_xyz_godot": [
+   0.225,
+   0.098,
+   0.225
+  ],
+  "min_y_godot": -0.002,
+  "center_xz": [
+   -0.001,
+   -0.002
+  ]
+ },
+ "ceramic_vase_01": {
+  "size_xyz_godot": [
+   0.204,
+   0.4,
+   0.204
+  ],
+  "min_y_godot": 0.001,
+  "center_xz": [
+   0.0,
+   -0.0
+  ]
+ },
+ "ceramic_vase_03": {
+  "size_xyz_godot": [
+   0.112,
+   0.414,
+   0.112
+  ],
+  "min_y_godot": 0.0,
+  "center_xz": [
+   -0.0,
+   -0.0
+  ]
+ },
+ "chess_set": {
+  "size_xyz_godot": [
+   0.553,
+   0.112,
+   0.553
+  ],
+  "min_y_godot": 0.0,
+  "center_xz": [
+   0.0,
+   -0.0
+  ]
+ },
+ "dead_tree_trunk": {
+  "size_xyz_godot": [
+   3.051,
+   0.29,
+   0.277
+  ],
+  "min_y_godot": -0.028,
+  "center_xz": [
+   -0.014,
+   -0.032
+  ]
+ },
+ "dead_tree_trunk_02": {
+  "size_xyz_godot": [
+   4.053,
+   1.057,
+   1.056
+  ],
+  "min_y_godot": -0.33,
+  "center_xz": [
+   0.102,
+   0.027
+  ]
+ },
+ "dining_chair_02": {
+  "size_xyz_godot": [
+   0.434,
+   0.973,
+   0.576
+  ],
+  "min_y_godot": 0.001,
+  "center_xz": [
+   0.0,
+   -0.043
+  ]
+ },
+ "drawer_cabinet": {
+  "size_xyz_godot": [
+   1.141,
+   1.881,
+   0.488
+  ],
+  "min_y_godot": 0.0,
+  "center_xz": [
+   -0.0,
+   -0.004
+  ]
+ },
+ "fancy_picture_frame_01": {
+  "size_xyz_godot": [
+   0.603,
+   0.464,
+   0.02
+  ],
+  "min_y_godot": -0.232,
+  "center_xz": [
+   0.0,
+   0.012
+  ]
+ },
+ "fancy_picture_frame_02": {
+  "size_xyz_godot": [
+   0.661,
+   0.771,
+   0.089
+  ],
+  "min_y_godot": -0.391,
+  "center_xz": [
+   -0.002,
+   0.046
+  ]
+ },
+ "fern_02": {
+  "size_xyz_godot": [
+   1.973,
+   0.428,
+   1.724
+  ],
+  "min_y_godot": -0.031,
+  "center_xz": [
+   0.458,
+   0.44
+  ]
+ },
+ "gothic_coffee_table": {
+  "size_xyz_godot": [
+   1.443,
+   0.559,
+   1.443
+  ],
+  "min_y_godot": 0.0,
+  "center_xz": [
+   0.0,
+   0.001
+  ]
+ },
+ "gothic_statue": {
+  "size_xyz_godot": [
+   1.477,
+   1.74,
+   1.564
+  ],
+  "min_y_godot": -0.016,
+  "center_xz": [
+   -0.044,
+   -0.408
+  ]
+ },
+ "hanging_picture_frame_01": {
+  "size_xyz_godot": [
+   0.594,
+   0.841,
+   0.016
+  ],
+  "min_y_godot": -0.42,
+  "center_xz": [
+   0.0,
+   0.008
+  ]
+ },
+ "hanging_picture_frame_02": {
+  "size_xyz_godot": [
+   0.752,
+   0.5,
+   0.033
+  ],
+  "min_y_godot": -0.279,
+  "center_xz": [
+   0.0,
+   0.019
+  ]
+ },
+ "hanging_picture_frame_03": {
+  "size_xyz_godot": [
+   0.385,
+   0.502,
+   0.032
+  ],
+  "min_y_godot": -0.255,
+  "center_xz": [
+   0.0,
+   0.016
+  ]
+ },
+ "horse_statue_01": {
+  "size_xyz_godot": [
+   0.164,
+   0.22,
+   0.108
+  ],
+  "min_y_godot": 0.0,
+  "center_xz": [
+   -0.004,
+   -0.0
+  ]
+ },
+ "jug_01": {
+  "size_xyz_godot": [
+   0.275,
+   0.211,
+   0.168
+  ],
+  "min_y_godot": 0.0,
+  "center_xz": [
+   -0.015,
+   -0.0
+  ]
+ },
+ "lantern_chandelier_01": {
+  "size_xyz_godot": [
+   0.579,
+   0.878,
+   0.575
+  ],
+  "min_y_godot": -0.865,
+  "center_xz": [
+   0.004,
+   0.0
+  ]
+ },
+ "large_iron_gate": {
+  "size_xyz_godot": [
+   2.95,
+   2.929,
+   0.097
+  ],
+  "min_y_godot": -0.008,
+  "center_xz": [
+   0.0,
+   0.013
+  ]
+ },
+ "lion_head": {
+  "size_xyz_godot": [
+   0.321,
+   0.436,
+   0.207
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   -0.002,
+   0.0
+  ]
+ },
+ "magnifying_glass_01": {
+  "size_xyz_godot": [
+   0.132,
+   0.272,
+   0.027
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   0.0,
+   0.0
+  ]
+ },
+ "mantel_clock_01": {
+  "size_xyz_godot": [
+   0.342,
+   0.16,
+   0.126
+  ],
+  "min_y_godot": 0.0,
+  "center_xz": [
+   0.0,
+   -0.0
+  ]
+ },
+ "marble_bust_01": {
+  "size_xyz_godot": [
+   0.272,
+   0.515,
+   0.3
+  ],
+  "min_y_godot": 0.0,
+  "center_xz": [
+   0.013,
+   0.005
+  ]
+ },
+ "metal_jug": {
+  "size_xyz_godot": [
+   0.197,
+   0.288,
+   0.195
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   0.0,
+   -0.0
+  ]
+ },
+ "old_bed_frame": {
+  "size_xyz_godot": [
+   0.905,
+   1.201,
+   2.002
+  ],
+  "min_y_godot": 0.0,
+  "center_xz": [
+   0.005,
+   0.002
+  ]
+ },
+ "ornate_mirror_01": {
+  "size_xyz_godot": [
+   0.486,
+   0.744,
+   0.026
+  ],
+  "min_y_godot": -0.411,
+  "center_xz": [
+   0.0,
+   0.013
+  ]
+ },
+ "painted_wooden_cabinet": {
+  "size_xyz_godot": [
+   1.195,
+   1.182,
+   0.617
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   0.003,
+   0.026
+  ]
+ },
+ "pocket_watch": {
+  "size_xyz_godot": [
+   0.058,
+   0.076,
+   0.016
+  ],
+  "min_y_godot": -0.029,
+  "center_xz": [
+   0.0,
+   -0.0
+  ]
+ },
+ "potted_plant_01": {
+  "size_xyz_godot": [
+   0.587,
+   1.35,
+   0.633
+  ],
+  "min_y_godot": -0.014,
+  "center_xz": [
+   -0.045,
+   -0.047
+  ]
+ },
+ "potted_plant_02": {
+  "size_xyz_godot": [
+   0.701,
+   0.841,
+   0.658
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   -0.046,
+   -0.092
+  ]
+ },
+ "round_wooden_table_01": {
+  "size_xyz_godot": [
+   1.399,
+   1.005,
+   1.399
+  ],
+  "min_y_godot": -0.001,
+  "center_xz": [
+   0.0,
+   0.0
+  ]
+ },
+ "round_wooden_table_02": {
+  "size_xyz_godot": [
+   0.796,
+   0.746,
+   0.796
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   0.0,
+   -0.0
+  ]
+ },
+ "shrub_01": {
+  "size_xyz_godot": [
+   2.586,
+   0.396,
+   0.219
+  ],
+  "min_y_godot": -0.009,
+  "center_xz": [
+   -0.561,
+   -0.004
+  ]
+ },
+ "shrub_02": {
+  "size_xyz_godot": [
+   6.573,
+   2.548,
+   2.536
+  ],
+  "min_y_godot": -0.606,
+  "center_xz": [
+   0.978,
+   0.077
+  ]
+ },
+ "shrub_04": {
+  "size_xyz_godot": [
+   0.584,
+   0.219,
+   0.146
+  ],
+  "min_y_godot": -0.006,
+  "center_xz": [
+   0.267,
+   -0.002
+  ]
+ },
+ "side_table_01": {
+  "size_xyz_godot": [
+   0.55,
+   0.551,
+   0.45
+  ],
+  "min_y_godot": -0.002,
+  "center_xz": [
+   0.0,
+   -0.0
+  ]
+ },
+ "side_table_tall_01": {
+  "size_xyz_godot": [
+   0.384,
+   0.761,
+   0.384
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   0.0,
+   0.0
+  ]
+ },
+ "sofa_02": {
+  "size_xyz_godot": [
+   1.807,
+   0.709,
+   0.818
+  ],
+  "min_y_godot": 0.0,
+  "center_xz": [
+   0.0,
+   -0.069
+  ]
+ },
+ "sofa_03": {
+  "size_xyz_godot": [
+   2.731,
+   1.118,
+   0.925
+  ],
+  "min_y_godot": 0.001,
+  "center_xz": [
+   0.0,
+   -0.001
+  ]
+ },
+ "spinning_wheel_01": {
+  "size_xyz_godot": [
+   0.489,
+   0.966,
+   1.025
+  ],
+  "min_y_godot": 0.0,
+  "center_xz": [
+   0.025,
+   0.038
+  ]
+ },
+ "standing_picture_frame_01": {
+  "size_xyz_godot": [
+   0.1,
+   0.25,
+   0.201
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   -0.011,
+   -0.0
+  ]
+ },
+ "strawberry_chocolate_cake": {
+  "size_xyz_godot": [
+   0.244,
+   0.079,
+   0.24
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   -0.002,
+   -0.007
+  ]
+ },
+ "street_lamp_01": {
+  "size_xyz_godot": [
+   0.704,
+   3.871,
+   0.386
+  ],
+  "min_y_godot": 0.0,
+  "center_xz": [
+   0.0,
+   0.0
+  ]
+ },
+ "street_lamp_02": {
+  "size_xyz_godot": [
+   0.386,
+   1.675,
+   0.807
+  ],
+  "min_y_godot": -0.395,
+  "center_xz": [
+   -0.0,
+   0.403
+  ]
+ },
+ "tea_set_01": {
+  "size_xyz_godot": [
+   0.918,
+   0.165,
+   0.484
+  ],
+  "min_y_godot": -0.001,
+  "center_xz": [
+   0.019,
+   -0.042
+  ]
+ },
+ "throw_pillows_01": {
+  "size_xyz_godot": [
+   1.022,
+   0.45,
+   0.627
+  ],
+  "min_y_godot": -0.002,
+  "center_xz": [
+   0.006,
+   0.072
+  ]
+ },
+ "treasure_chest": {
+  "size_xyz_godot": [
+   0.959,
+   0.619,
+   0.523
+  ],
+  "min_y_godot": -0.002,
+  "center_xz": [
+   0.0,
+   0.001
+  ]
+ },
+ "vintage_binocular": {
+  "size_xyz_godot": [
+   0.194,
+   0.068,
+   0.199
+  ],
+  "min_y_godot": -0.027,
+  "center_xz": [
+   -0.0,
+   0.002
+  ]
+ },
+ "vintage_cabinet_01": {
+  "size_xyz_godot": [
+   2.022,
+   2.235,
+   0.67
+  ],
+  "min_y_godot": -0.001,
+  "center_xz": [
+   0.0,
+   0.057
+  ]
+ },
+ "vintage_day_bed": {
+  "size_xyz_godot": [
+   1.973,
+   1.127,
+   0.855
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   0.0,
+   -0.042
+  ]
+ },
+ "vintage_grandfather_clock_01": {
+  "size_xyz_godot": [
+   0.626,
+   2.191,
+   0.427
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   0.0,
+   0.025
+  ]
+ },
+ "vintage_oil_lamp": {
+  "size_xyz_godot": [
+   0.22,
+   0.802,
+   0.22
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   -0.0,
+   -0.0
+  ]
+ },
+ "vintage_pocket_watch": {
+  "size_xyz_godot": [
+   0.061,
+   0.08,
+   0.014
+  ],
+  "min_y_godot": -0.031,
+  "center_xz": [
+   0.0,
+   -0.0
+  ]
+ },
+ "vintage_suitcase": {
+  "size_xyz_godot": [
+   1.608,
+   0.568,
+   0.239
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   0.001,
+   -0.009
+  ]
+ },
+ "vintage_telephone_wall_clock": {
+  "size_xyz_godot": [
+   0.343,
+   0.501,
+   0.193
+  ],
+  "min_y_godot": -0.074,
+  "center_xz": [
+   -0.005,
+   0.096
+  ]
+ },
+ "vintage_wooden_drawer_01": {
+  "size_xyz_godot": [
+   1.715,
+   1.091,
+   1.007
+  ],
+  "min_y_godot": -0.001,
+  "center_xz": [
+   0.0,
+   0.063
+  ]
+ },
+ "wall_clock": {
+  "size_xyz_godot": [
+   0.32,
+   0.32,
+   0.047
+  ],
+  "min_y_godot": -0.16,
+  "center_xz": [
+   0.0,
+   0.024
+  ]
+ },
+ "wicker_basket_01": {
+  "size_xyz_godot": [
+   0.383,
+   0.117,
+   0.295
+  ],
+  "min_y_godot": -0.001,
+  "center_xz": [
+   -0.0,
+   -0.0
+  ]
+ },
+ "wine_bottles_01": {
+  "size_xyz_godot": [
+   0.676,
+   0.331,
+   0.081
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   0.302,
+   0.0
+  ]
+ },
+ "wooden_bookshelf_worn": {
+  "size_xyz_godot": [
+   1.374,
+   2.063,
+   0.581
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   0.0,
+   -0.0
+  ]
+ },
+ "wooden_candlestick": {
+  "size_xyz_godot": [
+   0.097,
+   0.22,
+   0.099
+  ],
+  "min_y_godot": -0.0,
+  "center_xz": [
+   -0.0,
+   -0.0
+  ]
+ },
+ "wooden_display_shelves_01": {
+  "size_xyz_godot": [
+   0.372,
+   1.556,
+   1.078
+  ],
+  "min_y_godot": 0.0,
+  "center_xz": [
+   0.0,
+   -0.0
+  ]
+ },
+ "wooden_lantern_01": {
+  "size_xyz_godot": [
+   0.221,
+   0.53,
+   0.235
+  ],
+  "min_y_godot": -0.011,
+  "center_xz": [
+   0.0,
+   0.007
+  ]
+ }
+}

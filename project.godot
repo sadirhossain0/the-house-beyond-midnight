@@ -1,0 +1,125 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="The House Beyond Midnight"
+config/description="A cosy-spooky stylised 3D haunted adventure and puzzle game. Vertical slice: Prologue, Chapter 1 and Chapter 2."
+config/version="0.3.0"
+run/main_scene="res://src/main.tscn"
+config/features=PackedStringArray("4.7", "Forward Plus")
+boot_splash/bg_color=Color(0.02, 0.02, 0.035, 1)
+boot_splash/show_image=false
+config/icon="res://icon.png"
+config/macos_native_icon="res://icon.icns"
+config/windows_native_icon="res://icon.ico"
+
+[autoload]
+
+Events="*res://src/autoload/events.gd"
+Settings="*res://src/autoload/settings.gd"
+Controls="*res://src/autoload/controls.gd"
+Save="*res://src/autoload/save_system.gd"
+Audio="*res://src/autoload/audio_director.gd"
+Game="*res://src/autoload/game.gd"
+
+[debug]
+
+gdscript/warnings/integer_division=0
+gdscript/warnings/narrowing_conversion=0
+gdscript/warnings/inference_on_variant=1
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/window_width_override=1600
+window/size/window_height_override=900
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=4
+mouse_cursor/custom_image="res://assets/ui/cursor.png"
+mouse_cursor/custom_image_hotspot=Vector2(4, 4)
+
+[gui]
+
+theme/custom_font="res://assets/fonts/Alegreya.ttf"
+
+[importer_defaults]
+
+texture={
+"compress/high_quality": false,
+"compress/mode": 2,
+"detect_3d/compress_to": 0,
+"mipmaps/generate": true
+}
+ogg_vorbis={
+"loop": false
+}
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+common/physics_interpolation=true
+
+[rendering]
+
+textures/vram_compression/import_etc2_astc=true
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=3
+lights_and_shadows/positional_shadow/soft_shadow_filter_quality=3
+textures/default_filters/anisotropic_filtering_level=3
+global_illumination/sdfgi/probe_ray_count=2
+environment/volumetric_fog/volume_size=128
+environment/volumetric_fog/volume_depth=96
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)
+shading/overrides/force_vertex_shading.mobile=false
+
+[shader_globals]
+
+lantern_pos={
+"type": "vec3",
+"value": Vector3(0, -100, 0)
+}
+lantern_dir={
+"type": "vec3",
+"value": Vector3(0, 0, 1)
+}
+lantern_cos={
+"type": "float",
+"value": 0.9
+}
+lantern_range={
+"type": "float",
+"value": 9.0
+}
+lantern_beam={
+"type": "float",
+"value": 0.0
+}
+lantern_glow={
+"type": "float",
+"value": 0.0
+}
+ghost_vision={
+"type": "float",
+"value": 0.0
+}
+high_contrast={
+"type": "float",
+"value": 0.0
+}
+disco={
+"type": "float",
+"value": 0.0
+}
+wind_strength={
+"type": "float",
+"value": 1.0
+}

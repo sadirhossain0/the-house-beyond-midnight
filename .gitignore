@@ -1,0 +1,7 @@
+# Godot cache and exports
+.godot/
+build/
+*.tmp
+# Python caches from the asset tools
+__pycache__/
+*.pyc
