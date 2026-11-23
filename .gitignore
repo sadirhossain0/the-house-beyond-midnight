@@ -1,6 +1,7 @@
 # Godot cache and exports
 .godot/
 build/
+dist/
 *.tmp
 # Python caches from the asset tools
 __pycache__/
